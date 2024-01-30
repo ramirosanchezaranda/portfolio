@@ -21,3 +21,14 @@ export function formatTimeForArgentina(date: Date): string {
   };
   return date.toLocaleTimeString('es-AR', options);
 }
+export function formatDate(date: Date): string {
+  const options: Intl.DateTimeFormatOptions = {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  };
+  return date.toLocaleDateString('es-AR', options);
+}
+const now = new Date();
+console.log(formatDate(now)); // Muestra la fecha actual en el formato especificado
