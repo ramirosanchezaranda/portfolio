@@ -6,6 +6,7 @@ import Card from "./Card/index.astro";
 
 <script>
   import { onCleanup, onMount } from "solid-js";
+import { timeSeconds } from "d3";
 
   let interval: ReturnType<typeof setInterval>;
 
@@ -20,7 +21,7 @@ import Card from "./Card/index.astro";
   }
 
   onMount(() => {
-    interval = setInterval(updateClock, 10);
+    interval = setInterval(updateClock, 1000);
   });
 
   onCleanup(() => {
