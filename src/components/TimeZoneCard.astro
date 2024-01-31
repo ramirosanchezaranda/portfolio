@@ -20,7 +20,7 @@ import Card from "./Card/index.astro";
   }
 
   onMount(() => {
-    interval = setInterval(updateClock, 1000);
+    interval = setInterval(updateClock, 10);
   });
 
   onCleanup(() => {
@@ -36,7 +36,7 @@ throw new Error("Function not implemented.");
 }
 </script>
 
-<Card colSpan="lg:col-span-2" rowSpan="md:row-span-2" title="Time Zone">
+<Card colSpan="lg:col-span-2" rowSpan="md:row-span-2" title="Time Zone AR">
   <time
     datetime=""
     id="timeDisplay"
