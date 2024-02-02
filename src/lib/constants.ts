@@ -1,6 +1,6 @@
 export const LINKS = {
   github: "https://github.com/ramirosanchezaranda",
-  linkedin: "https://www.linkedin.com/in/RamiroSanchezAranda/",
+  linkedin: "https://www.linkedin.com/in/ramirosanchezaranda/",
 };
 
 export const loaderAnimation = [
