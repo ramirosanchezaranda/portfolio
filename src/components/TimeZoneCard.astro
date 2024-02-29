@@ -6,8 +6,7 @@ import Card from "./Card/index.astro";
 
 <script>
   import { onCleanup, onMount } from "solid-js";
-import { timeSeconds } from "d3";
-
+  import { formatTimeForArgentina } from "../lib/helpers";
   let interval: ReturnType<typeof setInterval>;
 
   function updateClock() {
@@ -28,6 +27,21 @@ import { timeSeconds } from "d3";
     clearInterval(interval);
   });
 
+
+function getCurrentTimeInArgentina() {
+throw new Error("Function not implemented.");
+}
+
+function formatTimeForArgentina(now: void): string | null {
+throw new Error("Function not implemented.");
+}
+
+function formatTimeForArgentina(now: Date): string {
+  const hours = now.getHours().toString().padStart(2, "0");
+  const minutes = now.getMinutes().toString().padStart(2, "0");
+  const seconds = now.getSeconds().toString().padStart(2, "0");
+  return `${hours}:${minutes}:${seconds}`;
+}
 </script>
 
 <Card colSpan="lg:col-span-2" rowSpan="md:row-span-2" title="Time Zone AR">
