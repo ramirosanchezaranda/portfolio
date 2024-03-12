@@ -5,8 +5,7 @@ import Card from "./Card/index.astro";
 ---
 
 <script>
-  import { onCleanup, onMount } from "solid-js";
-  
+  import { onCleanup, onMount } from "solid-js/types/index.d.ts";
   let interval: ReturnType<typeof setInterval>;
 
   function updateClock() {
