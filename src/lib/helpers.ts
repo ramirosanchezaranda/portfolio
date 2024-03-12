@@ -16,7 +16,7 @@ export function formatTimeForArgentina(date: Date): string {
   const options: Intl.DateTimeFormatOptions = {
     hour: 'numeric',
     minute: 'numeric',
-    second: 'numeric',
+    second: '2-digit',
     // Agrega opciones adicionales si es necesario
   };
   return date.toLocaleTimeString('es-AR', options);
