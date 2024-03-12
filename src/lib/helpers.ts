@@ -15,7 +15,8 @@ export function getCurrentTimeInArgentina(): Date {
 export function formatTimeForArgentina(date: Date): string {
   const options: Intl.DateTimeFormatOptions = {
     hour: 'numeric',
-    minute: '2-digit',
+    minute: 'numeric',
+    seconds: 'numeric',
     // Agrega opciones adicionales si es necesario
   };
   return date.toLocaleTimeString('es-AR', options);
