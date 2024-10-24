@@ -2,26 +2,26 @@
 import Card from "./Card/index.astro";
 ---
 
-<Card colSpan="md:col-span-1" rowSpan="md:row-span-6" title="About me">
-  <div class="flex flex-col gap-2">
-    <p class="text-sm font-light">
-      Hi, I'm Ramiro Sanchez Aranda, a front-end software developer from Argentina.
-      <br />
-       My primary tools of choice includes:
-      <ul class="list-disc list-inside">
-        <li >Solidjs</li>
-    <li>JavaScript</li>
-    <li>Swift</li>
-    <li>Node.js</li>
-    <li>React.js</li>
-    <li>Figma</li>
-    <li>Canva</li>
-      </ul>
+<Card colSpan="md:col-span-1" rowSpan="md:row-span-6" title="About Me">
+  <div class="flex flex-col gap-4 md:gap-6 p-4 md:p-6">
+    <p class="text-sm md:text-base lg:text-lg font-light">
+      Hi, I'm <strong>Ramiro Sánchez Aranda</strong>, a front-end developer from Argentina.
     </p>
-    <p class="text-sm font-light">
-      While I have some preferred tools, I always choose the best one for the
-      job, even if it's not on my usual list. My goal is to find the right
-      solution for each project.
+    <p class="text-sm md:text-base lg:text-lg font-light">
+      My main toolkit includes:
+    </p>
+    <ul class="list-disc list-inside pl-4 md:pl-6 text-sm md:text-base lg:text-lg font-light">
+      <li>SolidJS</li>
+      <li>JavaScript</li>
+      <li>Swift</li>
+      <li>Node.js</li>
+      <li>React.js</li>
+      <li>Figma</li>
+      <li>Canva</li>
+    </ul>
+    <p class="text-sm md:text-base lg:text-lg font-light">
+      I'm flexible in my approach—while I have favorite tools, I always prioritize
+      finding the right solution for each project, even if it means using something new.
     </p>
   </div>
 </Card>
